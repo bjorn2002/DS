@@ -1,0 +1,11 @@
+Practical.No.7
+Aim:- Practical Implementation of Logistic Regression using R Tool.
+Code:-
+
+
+data(mtcars)
+summary(mtcars)
+model=glm(formula=vs~wt+disp,data=mtcars,family="binomial")
+model
+newdata=data.frame(wt=2.1,disp=180)
+predict(model,newdata,type="response")
