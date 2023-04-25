@@ -11,9 +11,11 @@ iris.new<- iris[,c(1,2,3,4)]
 iris.class<- iris[,"Species"]
 head(iris.new)
 head(iris.class)
-normalize <- function(x){
+normalize <- function(x)
+{
 return ((x-min(x))/(max(x)-min(x)))
 }
+
 iris.new$Sepal.Length<- normalize(iris.new$Sepal.Length)
 iris.new$Sepal.Width<- normalize(iris.new$Sepal.Width)
 iris.new$Petal.Length<- normalize(iris.new$Petal.Length)
