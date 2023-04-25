@@ -1,0 +1,18 @@
+Practical.No.8
+Aim:- Practical Implementation of Principal Component Analysis(PCA) using R
+Tool.
+
+
+Code:-
+head(iris)
+d=iris[,-5]
+head(d)
+pc=princomp(d,cor=TRUE,score=TRUE)
+summary(pc)
+plot(pc)
+plot(pc,type='l')
+biplot(pc)
+dim(d)
+attributes(pc)
+pc$loadings
+pc$scores
