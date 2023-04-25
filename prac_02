@@ -1,0 +1,22 @@
+Practical 2
+Aim: Practical of Data collection, Data curation and management for Large-scale Data system
+
+
+# Query Document based on the criteria
+db.user.find({name : "John"});
+db.user.find({ "age": { $gt: 25 } })
+db.user.find({"age" :{$lt : 25} }) 
+db.user.find({ name : { $ne: "John" } });
+db.students.find({ math: { $gte: 90 } })
+db.students.find({ math: { $lte: 90 } });
+
+db.students.updateOne(
+... { "name" : "ABC"},
+... { $set : { " science" : 70}} ); 
+db.students.updateMany({math : {$gte : 90} },{$set: {"Grade" : "A"} } ) ;
+db.students.deleteOne({criteria: " value"})
+db.students.deleteMany({science: {$lte: 76}});         
+db.collection.find().limit(number) 
+db.collection.find().skip(numberOfDocumentsToSkip)
+
+
