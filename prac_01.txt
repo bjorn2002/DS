@@ -1,0 +1,24 @@
+Practical 1
+
+Aim: Practical of Data collection, Data curation and management for Unstructured data.
+● Starting mongoDB using  : `mongosh` command .
+ 
+● Creating a Database in MongoDB using `use` command.
+
+● Getting all the Databases using `show dbs;` command.
+ 
+● let us create a collection user and inserta document in it.
+ 
+● Dropping a collection  using ‘db.dropDatabase()` command.
+ 
+● Creating Collections in Mongodb using `db.createCollection(“collectionname”);` command .
+ 
+● All the collections in a database using `show collections`.
+ 
+● Getting a particular collection using `db.collectionName.find()` command.
+ 
+● Deleting a collection using `db.collectionName.drop()` command.
+
+● Inserting Records in a collection using `db.collectionName.insertOne()`,` db.collectionName.insertMany()` commands.
+ 
+ ● Getting a desired Record using `db.collectionName.find(anykey);` command.
